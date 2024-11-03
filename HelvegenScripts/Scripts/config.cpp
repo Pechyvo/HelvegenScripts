@@ -1,6 +1,7 @@
+//Made by Pechyvo, Pechyvo#6299
 class CfgPatches
 {
-	class MT_Scripts
+	class HelvegenScripts
 	{
 		requiredAddons[] = { "DZ_Scripts" };
 	};
@@ -10,7 +11,7 @@ class CfgAddons
 {
     class PreloadAddons
     {
-        class ModTemplate
+        class HelvegenScripts
         {
             list[]={};
         };
@@ -19,13 +20,13 @@ class CfgAddons
 
 class CfgMods
 {
-    class ModTemplate
+    class HelvegenScripts
     {
-        name="";
-        dir="ModTemplate";
+        name="HelvegenScripts";
+        dir="HelvegenScripts";
         picture="";
         action="";
-        author="";
+        author="Pechyvo";
         overview = "";
 		inputs = "";
 		type = "mod";
@@ -44,21 +45,21 @@ class CfgMods
 
 			class engineScriptModule 
 			{ 
-				files[] = { "ModTemplate/Scripts/1_Core"};
+				files[] = { "HelvegenScripts/Scripts/1_Core"};
 			};
 
 			class gameScriptModule
 			{
-				files[] = { "ModTemplate/Scripts/3_Game" };
+				files[] = { "HelvegenScripts/Scripts/3_Game" };
 			};
 			class worldScriptModule
 			{
-				files[] = { "ModTemplate/Scripts/4_World" };
+				files[] = { "HelvegenScripts/Scripts/4_World" };
 			};
 
 			class missionScriptModule 
 			{
-				files[] = { "ModTemplate/Scripts/5_Mission" };
+				files[] = { "HelvegenScripts/Scripts/5_Mission" };
 			};
 		};
     };
